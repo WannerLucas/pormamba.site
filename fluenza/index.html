@@ -1,0 +1,685 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fluenza - Trabalho concluído</title>
+<link rel="shortcut icon" href="favicon2.ico" />
+<link rel="stylesheet" href="https://languageoflust.com/lfsl/site.styles.css">
+<link rel="stylesheet" href="https://languageoflust.com/lfsl/add.styles.css">
+<link rel="stylesheet" href="https://languageoflust.com/lfsl/standardize.min.css">
+<link rel="stylesheet" href="https://languageoflust.com/lfsl/lod.styles.css">
+
+<!--<meta name="viewport" content="width=device-width">-->
+<!-- ClickBank Trust Badge -->
+
+
+<style>
+
+a {
+display:block;
+ border-style:none;
+ border-radius:15px;
+ z-index:21;
+background:rgba(23,206,86,1);
+ box-shadow:none;
+ text-shadow:1px 1px #002a05;
+ color:#fff;
+ font-size:28px;
+ line-height:34px;
+ font-weight:600;
+ font-family:Open Sans;
+ font-style:normal;
+ text-align:center;
+ background-repeat:no-repeat;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700|Yanone+Kaffeesatz:400,200,300,700|Allerta);
+
+
+.accent{
+  color:firebrick;
+}
+.u{
+  text-decoration:underline;
+}
+
+.ctr{
+  text-align:center;
+}
+
+p{
+  font:18px/1.33 "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+  text-align:center;
+  font-family:"Open Sans", Arial, Helvetica, sans-serif;
+  line-height:1.25em;
+}
+
+.content-and-image{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.content-and-image .content{
+  width: 50%;
+  float: left;
+}
+
+.left{
+  text-align:left;
+}
+
+/*Overrides*/
+
+.longsalesletter .condensed{
+  font-family: "Roboto Condensed";
+}
+
+.longsalesletter h1{
+  font-size:40px;
+  font-weight:600;
+}
+
+.longsalesletter h1.huge{
+  font-size:60px;
+  font-weight:600;
+  margin-top:0.5em;
+}
+.longsalesletter h1.huger{
+  font-size: 72px;
+}
+
+.longsalesletter h1.large{
+  font-size:48px;
+}
+
+.longsalesletter h2{
+  font-size:30px;
+  font-weight:600;
+  margin-top:0.5em;
+}
+.longsalesletter h2.big{
+  font-size: 36px;
+}
+.longsalesletter h3{
+  font-size:24px;
+  line-height:1.33;
+  font-weight:600;
+  margin-top:0.5em;
+}
+.longsalesletter h4{
+  font-size:20px;
+  line-height:1.33;
+  font-weight:600;
+  margin-top:0.5em;
+}
+.longsalesletter h1 strong, .longsalesletter h2 strong, .longsalesletter h3 strong, .longsalesletter h4 strong{
+  font-weight:700;
+}
+
+
+
+.longsalesletter p{
+  font-size:18px;
+  line-height:1.5;
+}
+.longsalesletter p.larger{
+  font-size:22px;
+}
+@media (max-width: 500px){
+  .longsalesletter h1{
+    font-size: 3rem;
+  }
+
+  .longsalesletter h1.huge{
+    font-size: 3.2rem;
+  }
+  .longsalesletter h1.huger{
+    font-size: 4rem;
+  }
+  .longsalesletter h1.large{
+    font-size: 2.6rem;
+  }
+
+  .longsalesletter h2{
+    font-size: 1.8rem;
+  }
+  .longsalesletter h3{
+    font-size: 1.6rem;
+  }
+  .longsalesletter h4{
+    font-size: 1.4rem;
+
+  }
+  .longsalesletter p{
+    font-size: 1.2rem;
+  }
+
+}
+
+
+.longsalesletter .semibold{
+font-weight:600;
+}
+
+.longsalesletter .semibold strong{
+font-weight:700;
+}
+.sectionouter.darkwrap {
+    background-color: #141715;
+    background-image: url("img/chalkboard-bg.png");
+    background-repeat: repeat;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.85) inset;
+    color: #fff;
+}
+.sectionouter.darkwrap .sticky {
+    color: #000;
+}
+.sectionouter.goldwrap{
+    background-image: url("img/gold-bg.png");
+    background-repeat: repeat;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.85) inset;
+}
+.sectionouter.redwrap {
+    background-color: #141715;
+    background-image: url("img/red-bg.png");
+    background-repeat: repeat;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5) inset;
+    color: #fff;
+}
+.sectionouter.darkwrap .accent {
+    color: #fff869;
+}
+.sectionouter.redwrap .accent, .sectionouter .rectangle-speech-border .accent {
+    color: #0cca2b;
+}
+.sectionouter.dark p {
+}
+.sectionouter.whitewrap .marker, .sectionouter.darkwrap .sticky .marker {
+    border-image: url("img/redmarker.png") 0 10 13 10 fill stretch repeat;
+    border-style: solid;
+    border-width: 0 10px 15px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.sectionouter.whitewrap .markerul, .sectionouter.darkwrap .sticky .markerul {
+    background-image: url("img/inlineredmarker.png");
+    background-position: left 1em;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+span.hilite, span.highlight, span.hi, strong.hi {
+    background-color: #fff869;
+    margin: auto;
+    padding: 2px 4px;
+}
+.redwrap span.hi, .redwrap strong.hi {
+    background-color: #0cca2b;
+    color: #fff;
+}
+
+
+
+.sectionouter.whitewrap{
+  background-color:#F3F3F3;
+}
+.sectionouter.whitewrap .sectioninner{
+  background-color:#fff;
+}
+
+.sectionouter.redwrap .markerul, .sectionouter.darkwrap .markerul {
+    background-image: url("img/inlinewhitemarkershadow.png");
+    background-position: left 1em;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sectionouter.darkwrap .markerul {
+    background-image: url("img/inlinewhitemarker.png");
+}
+
+.sectionouter.whitewrap .sectioninner .blackbox {
+    font-size: 4.65em;
+    line-height: 1em;
+    margin-bottom: 0;
+    padding: 8px 0 8px 18px;
+    text-transform: uppercase;
+  background-image:url(img/blackbox.png);
+  background-repeat:no-repeat;
+  background-position:center 0;
+  background-size:contain;
+  min-height:100px;
+  color:#fff;
+  margin-left:-25px;
+}
+@media screen and (max-width:600px){
+
+  .sectionouter.whitewrap .sectioninner .blackbox {
+    font-size: 2.5em;
+    margin: 0;
+    margin-top: 1em;
+  }
+}
+.longsalesletter .product-header,
+.longsalesletter .product-subhead{
+  width: 70%;
+  float: left;
+  padding-right: 1em;
+}
+
+@media screen and (max-width:500px){
+  .longsalesletter .product-header{
+    clear: both;
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+}
+@media screen and (max-width:700px){
+  .longsalesletter .product-subhead{
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+
+}
+.longsalesletter .product-shot{
+  width: 30%; 
+  float: right;
+}
+
+@media screen and (max-width:500px){
+  .longsalesletter .product-shot{
+  width:80%; 
+  clear: both;
+  float: none;
+  display: block;
+  margin: 0 auto;
+  }
+}
+
+.flushbottom{
+  margin-bottom:0 !important;
+  
+}
+.flushtop{
+  margin-top:0 !important;
+  
+}
+
+
+.strikeout {
+    position: relative;
+}
+.strikeout::before {
+    border-color: red;
+    border-top: 2px solid red;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(-30deg);
+}
+.strikeout::after {
+    border-color: red;
+    border-top: 2px solid red;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(30deg);
+}
+
+.textshadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.caps{
+  text-transform:uppercase;
+}
+
+.bubble 
+{
+position: relative;
+width: 80%;;
+padding: 5px;
+background: #E6E5EA;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 15px 0;
+border-color: transparent #E6E5EA;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -15px;
+left: -15px;
+top: 50%;
+}
+
+/* ============================================================================================================================
+== RECTANGLE-BORDER STYLE WITH CURVE
+** ============================================================================================================================ */
+
+.rectangle-speech-border {
+   position:relative;
+  padding:15px;
+  margin:1em 0 3em;
+  color:#fff;
+  background:#C81E2B;
+  /* css3 */
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#C81E2B), to(#C81E2B));
+  background:-moz-linear-gradient(#C81E2B, #C81E2B);
+  background:-o-linear-gradient(#C81E2B, #C81E2B);
+  background:linear-gradient(#C81E2B, #C81E2B);
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+.rectangle-speech-border:before {
+  content:"";
+  position:absolute;
+  bottom:-20px; /* value = - border-top-width - border-bottom-width */
+  left:60px; /* controls horizontal position */
+  border:0;
+  border-right-width:30px; /* vary this value to change the angle of the vertex */
+  border-bottom-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
+  border-style:solid;
+  border-color:transparent #c81e2b;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+/* creates the narrower right-angled triangle */
+.rectangle-speech-border:after {
+  content:"";
+  position:absolute;
+  bottom:-20px; /* value = - border-top-width - border-bottom-width */
+  left:80px; /* value = (:before's left) + (:before's border-right/left-width)  - (:after's border-right/left-width) */
+  border:0;
+  border-right-width:10px; /* vary this value to change the angle of the vertex */
+  border-bottom-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :before */
+  border-style:solid;
+  border-color:transparent #fff;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+h1.rectangle-speech-border{
+  margin-bottom:1em;
+}
+
+.sectionouter p{
+  margin-bottom: 1em;
+}
+
+p{
+font-family: "Montserrat", Sans-serif;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body class="body index longsalesletter">
+<div id="thesalesletter" class="longsalesletter">
+<div class="sectionouter section2 clearfix redwrap">
+    <div class="sectioninner clearfix">
+<!--<p class="preheadintro left semibold textshadow"><span class="hi" style= "font-size:38px;">Pare de gastar tempo e dinheiro com sua operação...</span></p>-->
+<h1 class="ctr semibold textshadow large">Fala, Fluenza!<span class="accent"></h1>
+
+
+<h2 class="semibold large" ><strong class="accent">Prezamos muito pela sua experiência, então... criamos uma SLUG dentro do nosso site oficial para você ter acesso ao trabalho contratado...</strong></h2>
+<h2 class="semibold large" ><strong class="accent">Conte sempre com a MAMBA!</strong></h2>
+</div>
+</div>
+
+<div class="sectionouter section2 clearfix whitewrap">
+    <div class="sectioninner clearfix">
+
+<center><p style= "font-size:48px; background: #FDF84A;"><strong>3 VSL's Cinematográficas</p></strong></center>
+
+
+<center>
+
+  <center><p style= "font-size:48px; background: #FDF84A;"><strong>VSL 01</p></strong></center>
+
+
+<br><br>
+<center><p style= "font-size:48px; background: #FDF84A;"><strong>VSL 02</p></strong></center>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/724944520?h=5a6b32ceaa&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="UPSELL 1.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+<br><br>
+<center><p style= "font-size:48px; background: #FDF84A;"><strong>VSL 03</p></strong></center>
+<iframe src="https://player.vimeo.com/video/724946856?h=c6e69407e3" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</center>
+
+<!--
+<center><p style= "font-size:48px">Saiba que agora você não precisa mais se preocupar com isso, a Mamba possui um <strong>arsenal de experts em cada área que você precisa para sua Operação Black</strong> <u>e garante a entrega de toda a sua estrutura em até 7 dias...</u></p></center>
+<center><p style= "font-size:48px; background: #FDF84A;"><strong>Você não entende nada de programação?</p></strong>
+<img src= "codigoshtml.png">
+</center>
+<center><p style= "font-size:48px;">Você não sabe onde encontrar os <strong style= "background: red; color:white;"> melhores fornecedores de perfis de Facebook</strong> do mercado com perfis reais e restabelecidos?</p></center>
+<img src= "perfisok.png">
+<center><p style= "font-size:48px">Você não sabe onde encontrar hospedagens que <strong style= "background: #FDF84A;"> aceleram a velocidade do seu site</strong><u> e diminui ao mínimo possível a perca de pessoas entre o clique em seu anúncio até a página de destino?</u></p></center>
+<center><p style= "font-size:48px"><strong style= "background: #FDF84A;">Exemplo de uma perfomance de um site hospedado em nossos servidores:</strong></p></center>
+<img src= "siterapido.png">
+
+
+<center><p style= "font-size:48px; background: #FDF84A;"><strong>Você não sabe onde ou como construir uma VSL com edição cinematográfica?</strong></p>
+<img src= "gif-cine.gif">
+</center>
+<center><p style= "font-size:48px"><strong style= "background: red; color:white;">Agora...</strong><br></p></center>
+<center><p style= "font-size:48px">Imagine... se você encontrar um bom <strong style= "font-size:48px; background: #FDF84A;">Web Designer por aí...</strong><br>Ele entregará sua página de vendas em até 3 dias...</p></center>
+<center><p style= "font-size:48px"><strong style= "background: red; color:white;">Calcula comigo...</strong><br></p></center>
+<center><p style= "font-size:48px">Imagino que você saiba que para editar uma VSL, um editor de vídeo comum, <strong>te pedirá no mínimo uns 10 dias...</strong></p></center>
+<center><p style= "font-size:48px">E o narrador? Se você der muita sorte ele te entrega o áudio dependendo do tamanho da copy <strong>entre 2 ou 3 dias...</strong></p></center>
+<center><p style= "font-size:48px">E sobre a hospedagem e domínio do seu site, <strong>muitos por ai cobrará mais ou menos cem reais só para hospedar o seu site e ainda não garantirá que o site carregue rápido como precisa,</strong> normalmente fica em torno de 50% um carregamento comum, <strong style= "font-size:48px; background: #FDF84A;">isso prejudica o Playrate do seu vídeo e consequentemente menos pessoas assistindo sua VSL...</strong></p></center>
+
+
+</div>
+</div>
+<div class="sectionouter section2 clearfix redwrap">
+    <div class="sectioninner clearfix">
+<h1 class="huge condensed caps flushbottom flushtop textshadow"><em><strong class="accent u">Eu tenho uma boa notícia para você...</strong></em></h1>
+<p class="ctr" style= "font-size:48px">Você não precisa mais continuar achando que tem alguma coisa de errado acontecendo com você... Que só você demora demais para subir uma operação inteira, ou que isso <strong class="accent">“é difícil demais”</strong> e que provavelmente ficará pelo caminho e ainda gastar rios de dinheiro...</p>
+
+</div>
+</div>
+<div class="sectionouter section2 clearfix whitewrap">
+    <div class="sectioninner clearfix">
+<center><p style= "font-size:48px">Chegou a hora de parar de <strong style= "color:red;">“torrar dinheiro”</strong> com as pessoas erradas, que muitas vezes podem até te dar um calote...</p></center>
+<center><p style= "font-size:48px">Prezamos muito pela sua segurança e satisfação, por isso aqui com a Mamba, você estará protegido pelo <strong style= "color:red;">Direito de Reembolso,</strong> caso queira... Ou seja, depois da contratação do serviço, você tem até 7 dias para avaliar toda a estrutura, <strong style= "background: red; color:white;">assim garantimos sua satisfação com qualquer um de nossos pacotes.</strong></p></center>
+<center><p style= "font-size:48px">Criar toda essa estrutura pra nós é uma mera rotina...</p></center>
+<center><p style= "font-size:48px"><strong style= "background: red; color:white;">Sabemos exatamente o que está acontecendo no Mercado de Ofertas Black, exclusivamente em PLR's...</strong></p></center>
+<center><p style= "font-size:48px"><strong style= "font-size:48px; background: #FDF84A;">Estamos subindo novas campanhas...</strong></p></center>
+<center><p style= "font-size:48px"><strong style= "font-size:48px; background: #FDF84A;">Testando novas VSl's...</strong></p></center>
+<center><p style= "font-size:48px"><strong style= "font-size:48px; background: #FDF84A;">Testando Página de Vendas no nível de sofisticação correto do nicho...</p></strong></center>
+<center><p style= "font-size:48px"><strong>Tudo o que você possa imaginar para te entregar exatamente o que está funcionando hoje...</strong></p></center>
+
+
+
+</div>
+</div>
+<div class="sectionouter section2 clearfix darkwrap">
+    <div class="sectioninner clearfix">
+<h1 style= "font-size:48px;" class="condensed huge flushbottom flushtop">Eu te entendo...</h1>
+<h2 style= "font-size:42px;">eu sei exatamente o que você sente, e também sofri muito com tudo o que você está sentindo...</h2>
+<h3 style= "font-size:42px;"><strong class="accent u">Sempre alguém enrola para mandar alguma parte da sua oferta, e depender de 6 ou 7 pessoas para lançar um produto não é fácil...</strong></h3>
+<h3 style= "font-size:42px;"><strong><u>Em apenas 1 clique você contrata tudo que precisa e em até 7 dias estará tudo no ar!</u></strong></h3>
+
+
+</div>
+</div>
+<div class="sectionouter section2 clearfix whitewrap">
+    <div class="sectioninner clearfix">
+<h1 class="rectangle-speech-border large">Para encurtar e intermediar esse caminho entre os produtores de PLR's e os melhores freelas do Brasil...</h1>
+<center><p style= "font-size:48px">Mas com uma <strong style= "color:red">“pequena”</strong> diferença...</p></center>
+<center><p style= "font-size:48px">Depois de anos no mercado, <strong style= "font-size:48px; background: #FDF84A;">milhões de reais gerados,</strong> nós possuímos um portfólio imenso, <strong><u>com os melhores profissionais de todas as áreas,</u></strong> e como nós não queremos dar isso “de graça” para todo mundo...</p></center>
+<center><p style= "font-size:48px"><strong style= "color:red">“Se você está aqui é porque de alguma forma faz parte do grupo seleto de pessoas</strong> que estão em busca do sucesso no mundo do <strong>mercado digital,</strong> e principalmente sobre <strong>PLR...</strong></p></center>
+<center><p style= "font-size:48px">Agora só como uma pequena amostra, eu vou deixar aqui alguns trechos de VSL que fizemos e que já <strong><u>venderam MUITO...</u></strong></p></center>
+<center>
+<iframe src="https://player.vimeo.com/video/719996827?h=23082d236f" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/719998668?h=f8fee885d8" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/719999962?h=9c6d0f7dc9" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</center>
+<br><br>
+<center><button style= "font-size:48px; background: green; border-width: 15px; padding:20px;  border-color: #291c1c; color:white; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);"><b>ACESSE NOSSOS PLANOS AQUI</b></button></center>
+<br><br>
+<!--<img src= "pacote-vsl.png" style="border-width: 5px; border-style: dashed; border-color: #291c1c">-->
+
+     
+ <!--    
+   <center><p style= "font-size:48px">Agora que você já viu tudo o que temos há oferecer, você tem apenas dois caminhos...</p></center>
+<center><p style= "font-size:48px"> <strong style= "font-size:48px; background: #FDF84A;">OPÇÃO 1</strong></p></center>
+     <center><p style= "font-size:48px"><strong style= "background: red; color:white;">Continuar sofrendo tentando fazer tudo sozinho e no fim gastando muito mais tempo e dinheiro para subir a sua oferta...</strong></p></center>
+
+
+<center><p style= "font-size:48px"> <strong style= "font-size:48px; background: #FDF84A;">OPÇÃO 2</strong></p></center>
+<center><p style= "font-size:48px"><strong style= "background: red; color:white;">Delegar isso para os melhores do mercado, se preocupando somente com coisas fundamentais para o seu negócio funcionar, e deixando a parte burocrática e operacional para os mestres do mercado...</strong></p></center>
+
+<h2 class="ctr" style= "font-size:48px">Agora, vamos combinar uma coisa... Você sabe qual é a melhorer decisão a ser tomada agora...</h2>
+<center><p style= "font-size:48px">Tudo isso está sendo oferecido abaixo do preço praticado no mercado... E ainda além de você reunir dezenas de pessoas que você não confia ou não conhece e demorar mais de 10 ou 20 dias para deixar tudo pronto...</p></center>
+<center><p style= "font-size:48px">Com a <strong>Mamba</strong> você tem sua operação completa em até 7 dias no ar, <strong>sem se preocupar com absolutamente nada!</strong></p></center>
+
+<center><button style= "font-size:48px; background: green; border-width: 15px; padding:20px;  border-color: #291c1c; color:white; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);"><b>ACESSE NOSSOS PLANOS AQUI</b></button></center>
+
+</div>
+</div>
+<!--<div class="sectionouter section2 clearfix redwrap">
+    <div class="sectioninner clearfix">
+<h1 class="caps condensed huge flushbottom textshadow flushtop">Você alguma vez <em class="accent">já passou por isso?</em></h1>
+<h3 class="flushbottom">Você não está sozinha!</h3>
+</div>
+</div>
+<div class="sectionouter section2 clearfix whitewrap">
+    <div class="sectioninner clearfix">
+<p style= "font-size:28px">A grande maioria das mulheres passam por isso diariamente...</p>
+<p style= "font-size:28px">Daqui <strong class="accent">alguns segundos</strong> vou te mostrar exatamente o que você precisa fazer para <strong>começar a emagrecer ainda hoje, tá bom?</strong>
+</p>
+<p style= "font-size:28px">De tanto ver mulheres <strong class="accent">sofrendo</strong> <strong>por nunca conseguirem perder peso...</strong></p>
+<p style= "font-size:28px">Fazendo dietas restritivas, indo todos os dias para academia, deixando de comer o que gosta... </p>
+<p style= "font-size:28px">Cortando os carboidratos depois das 18, contar calorias, pesar comida em balancinhas…</p>
+<h1 class="rectangle-speech-border"><strong class="accent">Eu decidi fazer uma coisa… </strong></h1>
+<h2>Porque não ajudar <span class="u"><span class="hi">realmente as mulheres que estão decididas a perderem peso</span></span> e que não suportam mais tudo isso?</h2>
+<p style= "font-size:28px">Durante os últimos anos, venho ajudando mulheres <strong>todos os dias</strong> <strong class="accent">a conquistarem seu corpo de quando eram mais jovem de volta...</strong></p>
+<p style= "font-size:28px">Principalmente aquelas que <strong class="accent">já tentaram de tudo,</strong> <strong>e que estão acima dos 30 anos,</strong> <strong class="accent">a ficarem magras de uma vez por todas...</strong></p>
+<p style= "font-size:28px">Sim, eu ajudo essas mulheres a recuperarem sua vida de volta, de uma forma 100% natural e que você pode fazer em sua casa agora mesmo...</p>
+
+</div>
+</div>
+<div class="sectionouter section2 clearfix darkwrap">
+    <div class="sectioninner clearfix">
+<h2>Antes que você <strong class="accent">imagine</strong> que isso apenas acontece com mulheres que...</h2>
+<p style= "font-size:28px"><strong class="accent">Tem uma genética fácil de perder peso...</strong></p>
+<p style= "font-size:28px">Tenho que te dizer que <strong class="accent">isso funciona</strong> com qualquer mulher...</p>
+<p style= "font-size:28px"><strong class="accent">Seja a que tem mais facilidade de perder peso e outras que estão tentando <span class="u">e não está conseguindo perder nem sequer um quilinho.</span></strong></p>
+<p style= "font-size:28px">A <strong class="accent">Angélica, pela sua idade,</strong> perder mais de 20kg em menos de 20 dias...</p>
+<p style= "font-size:28px">É a <strong class="accent">prova exata</strong> de tudo que estou te dizendo aqui...</p>
+<h2>E este segredo, como te disse, <strong class="accent">foi guardado a 7 chaves <span class="u">para um número específico de pessoas...</span></strong></h2>
+</div>
+</div>
+<div class="sectionouter section2 clearfix whitewrap">
+    <div class="sectioninner clearfix">
+<p style= "font-size:28px">Para ter acesso a essa produção natural de enzima, <span class="u">era necessário aplicações caríssimas por médicos,</span> <strong class="accent">e isso é possível fazer em sua casa...</strong></p>
+<p style= "font-size:28px"><strong>Sem aplicar nada em seu corpo,</strong> <strong class="accent">apenas tomando essa mistura de 4 ingredientes todos os dias pela manhã...</strong></p>
+<p style= "font-size:28px">Seu corpo começa a derreter gordura localizada e sim...</p>
+<p style= "font-size:28px"><strong class="accent u">Você volta a ter o corpo que sempre sonhou.</strong></p>
+<p style= "font-size:28px">Por anos eu briguei com a indústria do emagrecimento para liberar esse segredo para as pessoas...</p>
+<p style= "font-size:28px">Eles sempre me ameaçaram de processo se eu fizesse isso, para eles, eu estar te contando isso aqui e agora é péssimo, vou tirar muito dinheiro do bolso deles que você provavelmente iria colocar pagando procedimentos caros...</p>
+<p style= "font-size:28px"><strong class="accent">Fazendo consultas, comprando remédios e alimentos light, </strong><em>sem saber desse segredo que estou prestes a te revelar, </em><span class="u">mas estou fazendo isso por você...</span></p>
+<p style= "font-size:28px">Eu sei o quanto <strong class="accent">deseja emagrecer,</strong> ter sua vida de volta, eu sei o quanto você ama seus filhos, sua família e quer se sentir bem novamente...
+</p>
+<h2>Uma coisa <strong class="accent">eu posso te dizer...</strong></h2>
+<p style= "font-size:28px">Se você tomar a mistura desses<strong class="accent"> 4 ingredientes</strong> ainda hoje na sua casa...</p>
+<p style= "font-size:28px">Você já começará sentir o efeito do que é finalmente ter descoberto algo que irá mudar sua vida para sempre...</p>
+<p style= "font-size:28px">Os cientistas estão chamando essa descoberta como <strong class="accent">a maior descoberta do emagrecimento dos últimos 100 anos...</strong></p>
+<p style= "font-size:28px">Essa descoberta tem um nome, eles estão chamando de <strong>Tecido Adiposo Marrom,</strong> esse tecido é o responsável em fazer você emagrecer sem mesmo perceber...</p>
+<p style= "font-size:28px">Através da produção natural da enzima, <strong class="accent">acelerar a perda de peso se torna fácil,</strong> porque essa produção irá diretamente no seu tecido de gordura conhecido como <strong><u>“marrom”...</u></strong></p>
+<p style= "font-size:28px">Esse tecido é o responsável por acelerar seu metabolismo, através da enzima que os <strong>4 ingredientes</strong> irá ativar em seu corpo...</p>
+<p style= "font-size:28px">Tudo isso de forma <strong><u>100% natural e segura para sua saúde,</u></strong> até porque você não irá tomar nada do que já não está acostumada, esses 4 ingredientes a maioria das mulheres já possuem em casa, você só precisa tomá-los em uma ordem específica durante 22 dias...</p>
+<p style= "font-size:28px">Eles custam <strong class="accent">centavos,</strong> e sua mistura é deliciosa, você não irá querer parar de beber, mas por favor em, <strong class="accent"><u><em>beba apenas 1x por dia, derrete muito!</u></em></strong>
+</p>
+<p style= "font-size:28px">Mas, antes de contar quais são esses ingredientes e o que você precisa fazer para começar já já a emagrecer...</p>
+<h2>Tenho<strong class="accent"> 2 recados</strong> para você...</h2>
+<p style= "font-size:28px">O primeiro é que não sei até quando esse artigo estará no ar, por um simples fato que contém <strong class="accent">segredos nunca antes revelados</strong> vão contra muitos interesses…
+</p>
+<p style= "font-size:28px">Não posso ensinar todas as mulheres do mundo, <strong><em><u>infelizmente não dará tempo,</u></em></strong> logo logo eles irão conseguir tirar esse site do ar...</p>
+<p style= "font-size:28px">Este conhecimento vou repassar a um <strong class="accent">grupo seleto de mulheres que verdadeiramente estejam precisando...</strong></p>
+<p style= "font-size:28px"><strong>A técnica é poderosa demais para estar de forma pública e espalhada pela internet...</strong></p>
+<p style= "font-size:28px">O outro fato é que os homens poderão descobrir esse segredo logo logo, <strong>e eu não quero isso,</strong> o mais importante para mim é fazer você mulher se sentir bem, e quando um homem te perguntar o que você fez...</p>
+<p style= "font-size:28px">Simplesmente olhar para ele e dizer assim: <strong class="accent">“Eu sempre fui linda assim.” Aaaaaai você vai arrasar!</strong></p>
+</div>
+</div>
+<div class="sectionouter section2 clearfix redwrap">
+    <div class="sectioninner clearfix">
+<h1 class="flushtop">Antes que esse conteúdo suma da Internet...</h1>
+<h2>Você está aqui agora, <strong class="accent">aproveite para ler</strong><strong class="accent"> e tomar nota de absolutamente tudo o que eu disser nas próximas linhas...</strong> </h2>
+<p style= "font-size:28px">E um alerta que eu preciso te dar é o seguinte, use esses ingredientes com sabedoria, você precisa tomar <u>apenas durante 20 dias,</u> <strong>eles secam muito...</strong></p>
+<h3>Mesmo caso desejar perder mais quilos que conseguir durante os 20 dias, fique tranquila, <strong class="accent">uma vez ativada essa enzima natural do seu corpo, você não precisará tomar mais essa mistura,</strong> tudo a partir daí continua de forma natural, combinado? <strong class="accent">Até que logo logo seu peso possa se estabilizar.</strong></h3>
+</div>
+</div>
+<div class="sectionouter section2 clearfix whitewrap">
+    <div class="sectioninner clearfix">
+<h2>Imagino que você esteja se perguntando quem sou eu, como descobri tudo isso e principalmente, porque resolvi não guardar isso só para mim e revelar este segredo tão poderoso aqui, neste site…</h2>
+<h2 class="left caps condensed">1. Minha<strong class="accent"> confissão.</strong></h2>
+<p style= "font-size:28px">Não é uma tarefa fácil contar isso, pois passei por momentos extremamente difíceis correndo o risco de ser processada a todo momento pelo que estou prestes a te mostrar… </p>
+<p style= "font-size:28px">Em alguns momentos cheguei a pensar em <strong class="accent">suicídio,</strong> ver mulheres passando por desesperos para emagrecerem e <strong>não conseguirem,</strong> e eu ter esse segredo em minhas mãos guardados por anos, era algo muito difícil para mim, depois de várias tentativas...</p>
+<h2 class="left caps condensed">2. MINHA<strong class="accent"> RAZÃO</strong></h2>
+<p style= "font-size:28px">Um dia resolvi abrir tudo que eu sei para você ficar magra para sempre, <strong><u>uma vez que você seguir os 20 dias descritos aqui, nunca mais irá passar por problemas de sobrepeso mais,</u></strong><strong class="accent"> eu te garanto!</strong></p>
+<p style= "font-size:28px">Faça isso por mim também, <strong>do quase suicídio a jogar minha carreira profissional toda para o lixo com os processos que estou prestes a tomar,</strong> mas faço isso por você!
+</p>
+<p style= "font-size:28px">Depois de ver várias famílias destruídas por obesidade, sem nunca encontrarem uma solução…</p>
+<p style= "font-size:28px">De chegarem mulheres em meu consultório e eu ter que receitar remédios e procedimentos caríssimos para elas, sendo que o que de fato iria mudar a vida delas <strong class="accent">estava guardado em segredo…</strong></p>
+<p style= "font-size:28px">Meu mundo começou a ruir, isso acabava comigo todos os dias…</p>
+<h2 class="left caps condensed">3.  MINHA <strong class="accent">DEPRESSÃO</strong></h2>
+<p style= "font-size:28px">Não demorou muito por eu ter entrado em uma <strong>profunda depressão</strong> e ver pessoas tentando a todo custo emagrecer mas <u><em>não conseguir…</em></u></p>
+<p style= "font-size:28px">Eu me sentia como se estivesse jogando contra elas, <strong>mas na verdade,</strong> <strong class="accent">o que eu queria de verdade é ajudá-las, e aqui estou eu, quero ajudar você.</strong></p>
+<p style= "font-size:28px">Eu sou mãe de gêmeos, eu pesava exatos 117 quilos, <strong class="accent"><u>e hoje estou com 65,</u></strong> as pessoas não entendiam como eu consegui emagrecer tão rápido, <strong>sem nenhum tipo de cirurgia…</strong></p>
+<p style= "font-size:28px">Mas eu era calada a todo instante, <u><em>nunca conseguia compartilhar esse segredo.</em></u> Sabe aquela vontade que a gente tem de <strong>vestir vestidinhos curtos e usar shortinhos para se sentir bem?</strong></p>
+<p style= "font-size:28px">Essa era exatamente eu, agora olha o meu antes e depois:</p>
+<img src="https://thumbs2.imgbox.com/7b/28/PejWat9O_t.jpeg" alt="Dra Larissa"><br><br>
+</div>
+</div>
+<div class="sectionouter section2 clearfix redwrap">
+    <div class="sectioninner clearfix">
+<p style= "font-size:28px">Hoje... </p>
+<h1 class="caps condensed huge flushbottom">52kg <strong class="accent">mais magra...</strong></h1>
+<p style= "font-size:28px">Sendo que nos primeiros <strong class="accent">20 dias consegui perder 21kg,</strong> e agora meu peso estabilizou exatamente onde eu gostaria.</p>
+</div>
+</div>
+<div class="sectionouter section2 clearfix whitewrap">
+    <div class="sectioninner clearfix">
+<p style= "font-size:28px">Essa abaixo é a Ana, <strong>conseguiu perder exatos 23kg,</strong> ela havia tentado de tudo, já havia tomado aqueles tônicos japoneses, dieta mediterrânea, cetogênica, chás e mais um monte de coisa...</p>
+<p style= "font-size:28px">Apenas <strong class="accent">essa mistura desses 4 ingredientes</strong> foi possível <strong>acelerar seu metabolismo através dessa enzima natural.</strong></p>
+<p style= "font-size:28px">Olha o resultado dela:</p>
+<img src="https://thumbs2.imgbox.com/c2/0d/ia2yaecb_t.jpeg" alt="Ana"><br><br>
+<p style= "font-size:28px">Você conhece a cantora <strong class="accent">Adele?</strong></p>
+<p style= "font-size:28px">Ela seguiu exatamente o mesmo procedimento de ativação dessa <strong class="accent"><u>enzima natural,</u></strong> ela começou a fazer esse procedimento há alguns meses, e olha o resultado incrível dela:</p>
+<img src="https://thumbs2.imgbox.com/eb/cf/3OchRmvf_t.jpeg" alt="Adele"><br><br>
+<p style= "font-size:28px">Ela não foi minha paciente, mas o procedimento que ela fez é através desta mesma enzima que <strong>você daqui alguns segundos irá ter em suas mãos…</strong></p>
+
+
+
+</div>
+</div>
+ <center><footer><p>As informações apresentadas nesse site, não se destinam a diagnosticar, tratar, curar ou prevenir qualquer tipo de doença. O leitor deve, para qualquer questão relativa a sua saúde e bem-estar, consultar um profissional devidamente credenciado pelas autoridades de saúde. Este produto recebeu o selo de aprovação da ANVISA, conforme o registro RDC 24/2018 comprovando sua efetividade e segurança.</p></footer></center>-->
+
+</body>
+</html>
